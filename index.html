@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>Trans Am</title>
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="img/png" href="favicon.png">
+</head>
+
+<body>
+<div class="wrap">
+<main>
+
+<!-- Left Column -->
+<div class="left column">
+  <img class="image" src="img/tt1.jpg" id="me1" onclick="shownextpic1()"/>
+</div>
+
+<!-- Right Column -->
+<div class="right column">
+  <ul class="menu top">
+    <li class="link active">Selected Work</li>
+    <li class="link"><a href="http://ericellis.tumblr.com">Sketches</a></li>
+  </ul>
+
+  <h2>Profile</h2>
+  <p>
+    Eric is writing in third person and is OK with it. E is a senior designer at a small studio in Charleston South Carolina called <a href="http://www.fuzzco.com" target="_blank">Fuzzco</a>. E participated in the 2016 <a href="http://typographysummerschool.org" target="_blank">Typography Summer School</a> in Gowanus Brooklyn, hosted by Fraser Muggeridge and Other Means.
+  </p>
+  <p>
+    E recently designed a headline/display font called Coplestons that you can <a href="https://pretendstore.co" target="_blank">buy for money</a>. E used to work at <a href="https://nelsoncash.com" target="_blank">Nelson Cash</a> in Chicago, and also lived in Chicago from 2005—2015.
+  </p>
+  <p>
+    When not graphic designing, I may be found painting a wall, vacuuming a floor, reading books, skateboarding or staring into space.
+  </p>
+
+  <h2>Services Offered</h2>
+    <ul>
+      <li>Branding</li>
+      <li>Website design</li>
+      <li>Website build</li>
+      <li>App design</li>
+      <li>Custom typography</li>
+      <li>Traditional/digital illustration</li>
+      <li>Writing, refining writing</li>
+    </ul>
+
+  <h2>Services Not Offered</h2>
+    <ul>
+      <li>Magic Tricks</li>
+      <li>Babysitting</li>
+      <li>Lawn care</li>
+      <li>Personal trainer</li>
+      <li>Speech writing</li>
+    </ul>
+
+  <ul class="menu bottom">
+    <li class="link"><a href="http://www.ohsully.com">Photos by Sully</a></li>
+    <li class="link"><a href="https://ericellis.net">Website by Eric</a></li>
+  </ul>
+</div><!-- end of right column -->
+</main>
+</div><!-- end wrap -->
+
+<script type="text/javascript">
+var counter1=0;
+var me1 = new Array();
+me1[0] = "img/tt2.jpg";
+me1[1] = "img/tt3.jpg";
+me1[2] = "img/tt4.jpg";
+me1[3] = "img/tt1.jpg";
+
+function shownextpic1()
+{document.getElementById("me1").src = me1[counter1++];
+if(counter1==4) counter1=0;}
+</script>
+
+</body>
+</html>
